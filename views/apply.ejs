@@ -1,0 +1,56 @@
+<% layout('layouts/boilerplate') %>
+<section class="container-fluid top-section">
+    <div class="row">
+        <div class="col-10 offset-1 banner text-center text-white">
+            <h1>Build your carrer at noirUSA</h1>
+            <h2>We’re a backyard technology company. Join us and see how you can help us do stuff!</h2>
+        </div>
+    </div>
+</section>
+<section class="container-fluid form-section">
+        <div class="col-4 offset-4">
+            <form id="apply-form" class="validated-form" method="POST" enctype="multipart/form-data" novalidate>
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-none text-white" id="firstName">First Name</span>
+                    <input type="text" class="form-control" id="fname" name="fname" aria-label="First Name" aria-describedby="firstName" required>
+                    <div class="invalid-feedback">
+                        First name is required
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-none text-white" id="lastName">Last Name</span>
+                    <input type="text" class="form-control" id="lname" name="lname" aria-label="Lirst Name" aria-describedby="lastName" required>
+                    <div class="invalid-feedback">
+                        Last name is required
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-none text-white" id="phoneNum">Phone</span>
+                    <input type="tel" class="form-control" id="phone" name="phone" aria-label="Phone NUmber" aria-describedby="phoneNum" required>
+                    <div class="invalid-feedback">
+                        Phone number is required
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text border-none text-white" id="emailAddr">Email</span>
+                    <input type="text" class="form-control" id="email" name="email" aria-label="Email" aria-describedby="emailAddr" required>
+                    <div class="invalid-feedback">
+                        Email is required
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group custom-file-button">
+                        <label class="input-group-text border-none text-white" for="resume" id="resInput">Resume</label>
+                        <input type="file" class="form-control" id="resume" required>
+                        <div class="invalid-feedback">
+                            Resume is required
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn purple-btn text-white">Submit</button>
+              </form>
+        </div>
+    </div>
+</section>
+<script src="/js/validateForm.js"></script>
+<script src="/js/apply.js"></script>
